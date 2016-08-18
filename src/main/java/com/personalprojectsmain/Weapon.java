@@ -1,17 +1,26 @@
-package personalProjectsMain;
+package com.personalprojectsmain;
 
 public abstract class Weapon {
+	
+	// =][= Variable declarations =][=
 	protected int weaponRange;
 	protected int weaponStrength = 1;
 	protected int weaponArmorPiercing = 0;
 	protected String weaponName = null;
 	
+	// =][= Begin Constructor =][=
 	public Weapon(int weaponRange, int weaponStrength, int weaponArmorPiercing, String weaponName) {
 		this.weaponRange = weaponRange;
 		this.weaponStrength = weaponStrength;
 		this.weaponArmorPiercing = weaponArmorPiercing;
 		this.weaponName = weaponName;
 	}
+	
+	// =][= Begin Blank Constructor =][=
+	public Weapon() {
+	}// =][= End Blank Constructor =][=
+
+
 
 	public int getWeaponRange() {
 		return weaponRange;
