@@ -6,13 +6,15 @@ public abstract class Weapon {
 	protected int weaponRange;
 	protected int weaponStrength = 1;
 	protected int weaponArmorPiercing = 0;
+	protected int numShots = 0;
 	protected String weaponName = null;
 	
 	// =][= Begin Constructor =][=
-	public Weapon(int weaponRange, int weaponStrength, int weaponArmorPiercing, String weaponName) {
+	public Weapon(int weaponRange, int weaponStrength, int weaponArmorPiercing, int numShots, String weaponName) {
 		this.weaponRange = weaponRange;
 		this.weaponStrength = weaponStrength;
 		this.weaponArmorPiercing = weaponArmorPiercing;
+		this.numShots = numShots;
 		this.weaponName = weaponName;
 	}
 	
@@ -20,8 +22,8 @@ public abstract class Weapon {
 	public Weapon() {
 	}// =][= End Blank Constructor =][=
 
-
-
+	public abstract int shootsWeapon(int weaponRange, int weaponStrength, int weaponArmorPiercing, int numShots);
+	
 	public int getWeaponRange() {
 		return weaponRange;
 	}

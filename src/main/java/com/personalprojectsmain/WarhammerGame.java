@@ -19,7 +19,9 @@ public class WarhammerGame {
 	public static void main(String[] args) {
 		
 		TacticalSquad alpha = new TacticalSquad();
+		Boltgun primus = new Boltgun(24, 4, 5, 2, "Boltgun", "alpha");
 		alpha.movement();
+		
 		
 	} // =][= End Main =][=
 	
